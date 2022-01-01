@@ -21,7 +21,7 @@ spec:
     filter: build.status == Build.Status.SUCCESS
     delivery:
       webhookUrl:
-        secretRef: https://hooks.slack.com/services/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
+        secretRef: slack-gcs-notifier-bot
   secrets:
-  - name: https://hooks.slack.com/services/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
+  - name: slack-gcs-notifier-bot
     value: projects/nyu-cap-ae/secrets/slack-gcs-notifier-bot/versions/latest
